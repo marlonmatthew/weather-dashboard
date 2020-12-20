@@ -1,0 +1,18 @@
+header {
+    padding: 10px;
+    background-color: gray;
+}
+
+#weatherCard {
+    height: 200px;
+    width: 150px;
+    background-color: rgb(58, 58, 255);
+    border-radius: 10px;
+}
+
+#prevCity {
+    padding: 10px 50px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+}
