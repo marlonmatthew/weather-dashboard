@@ -62,8 +62,8 @@ header {
 }
 
 #searchButton, #clearButton {
-    border:2px solid rgb(0, 9, 138);
-    -moz-box-shadow: 2px 2px 2px rgb(0, 13, 194);
+    border: 0px;
+    -moz-box-shadow: 2px 2px 2px rgb(3, 3, 3);
     -webkit-box-shadow: 2px 2px 2px rgb(0, 1, 78);
     box-shadow: 2px 2px 2px rgb(0, 1, 32);
     -moz-border-radius: 5px;
