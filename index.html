@@ -23,49 +23,55 @@
 
         <div class="row">
 
-            <div class="col-3">
+            <div class="col-2 mb-4">
 
                 <h6 class="mb-3">Search for a City:</h6>
 
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+                <form class="form-inline my-2 my-lg-0" id="searchForm">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
+                        id="inputCity">
+                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit" id="searchButton">Search</button>
                 </form>
 
-                <div class="text-center mt-3" id="prevCity">Previous City</div>
-                <div class="text-center" id="prevCity">Previous City</div>
-                <div class="text-center" id="prevCity">Previous City</div>
-                <div class="text-center" id="prevCity">Previous City</div>
-                <div class="text-center" id="prevCity">Previous City</div>
-                <div class="text-center" id="prevCity">Previous City</div>
-                <div class="text-center" id="prevCity">Previous City</div>
-                <div class="text-center" id="prevCity">Previous City</div>
+                <div class="mt-3" id="cityList"></div>
+
+                <div><button class="btn btn-outline-primary my-2 my-sm-0 mb-4" type="submit"
+                        id="clearButton">Clear</button>
+                </div>
 
             </div>
 
-            <div class="col-9">
 
-                <div class="card border-info mb-3">
-                    <div class="card-body">
-                        <div class="mb-4">
-                            <h3 class="card-text mb-2">City:</h3>
-                        </div>
-                        <div>
-                            <p class="card-text mb-2">Temperature:</p>
-                        </div>
-                        <div>
-                            <p class="card-text mb-2">Humidity:</p>
-                        </div>
-                        <div>
-                            <p class="card-text mb-2">Wind Speed:</p>
-                        </div>
-                        <div>
-                            <p class="card-text mb-2">UV Index:</p>
+
+            <div class="col-md">
+
+                <div class="container ml-4">
+
+                    <div class="row mb-3">
+                        <h4>Current Day Forecast:</h4>
+                    </div>
+
+                    <div class="card border-info mb-3" id="currentBorder">
+                        <div class="card-body" id="current">
+                            <div class="mb-4">
+                                <h5 class="card-text mb-2" id="city"></h5>
+                            </div>
+                            <div>
+                                <h6 class="card-text mb-2" id="temp"></h6>
+                            </div>
+                            <div>
+                                <h6 class="card-text mb-2" id="humidity"></h6>
+                            </div>
+                            <div>
+                                <h6 class="card-text mb-2" id="windSpeed"></h6>
+                            </div>
+                            <div>
+                                <h6 class="card-text mb-2" id="uvIndex"></h6>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="container">
+
 
                     <div class="row mb-3">
                         <h4>5 Day Forecast:</h4>
@@ -73,43 +79,48 @@
 
                     <div class="row">
                         <div class="col">
-                            <div id="weatherCard">
-                                <div>Date</div>
-                                <div>Pic</div>
-                                <div>Temp</div>
-                                <div>Humidity</div>
+                            <div id="weatherCard1">
+                                <h6 id="date1"></h6>
+                                <h6 id="weather1"></h6>
+                                <div id="icon1"></div>
+                                <h6 id="temp1"></h6>
+                                <h6 id="humidity1"></h6>
                             </div>
                         </div>
                         <div class="col">
-                            <div id="weatherCard">
-                                <div>Date</div>
-                                <div>Pic</div>
-                                <div>Temp</div>
-                                <div>Humidity</div>
+                            <div id="weatherCard2">
+                                <h6 id="date2"></h6>
+                                <h6 id="weather2"></h6>
+                                <div id="icon2"></div>
+                                <h6 id="temp2"></h6>
+                                <h6 id="humidity2"></h6>
                             </div>
                         </div>
                         <div class="col">
-                            <div id="weatherCard">
-                                <div>Date</div>
-                                <div>Pic</div>
-                                <div>Temp</div>
-                                <div>Humidity</div>
+                            <div id="weatherCard3">
+                                <h6 id="date3"></h6>
+                                <h6 id="weather3"></h6>
+                                <div id="icon3"></div>
+                                <h6 id="temp3"></h6>
+                                <h6 id="humidity3"></h6>
                             </div>
                         </div>
                         <div class="col">
-                            <div id="weatherCard">
-                                <div>Date</div>
-                                <div>Pic</div>
-                                <div>Temp</div>
-                                <div>Humidity</div>
+                            <div id="weatherCard4">
+                                <h6 id="date4"></h6>
+                                <h6 id="weather4"></h6>
+                                <div id="icon4"></div>
+                                <h6 id="temp4"></h6>
+                                <h6 id="humidity4"></h6>
                             </div>
                         </div>
                         <div class="col">
-                            <div id="weatherCard">
-                                <div>Date</div>
-                                <div>Pic</div>
-                                <div>Temp</div>
-                                <div>Humidity</div>
+                            <div id="weatherCard5">
+                                <h6 id="date5"></h6>
+                                <h6 id="weather5"></h6>
+                                <div id="icon5"></div>
+                                <h6 id="temp5"></h6>
+                                <h6 id="humidity5"></h6>
                             </div>
                         </div>
                     </div>
@@ -120,8 +131,6 @@
         </div>
 
     </div>
-
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"
         integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ=="
