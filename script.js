@@ -60,15 +60,15 @@ $(document).ready(function () {
 
                 // Display the temp
                 var temp = response.main.temp;
-                $("#temp").append(`Temperature: ${temp}°F`);
+                $("#temp").append(`Temperature: ${temp} °F`);
 
                 // Display the humidity
                 var humidity = response.main.humidity;
-                $("#humidity").append(`Humidity: ${humidity}`);
+                $("#humidity").append(`Humidity: ${humidity}%`);
 
                 // Display the wind speed
                 var windSpeed = response.wind.speed;
-                $("#windSpeed").append(`Wind Speed: ${windSpeed}`);
+                $("#windSpeed").append(`Wind Speed: ${windSpeed} MPH`);
 
                 // Send coordinates to One Call API for the UV Index
                 var lat = response.coord.lat;
@@ -253,6 +253,7 @@ $(document).ready(function () {
 
         var userCity = $(this).val();
         console.log(userCity);
+        console.log(this);
 
         // Clear all data
         clearData();
@@ -264,7 +265,6 @@ $(document).ready(function () {
         apiCall5Day(userCity);
 
     });
-
 
     $("#clearButton").on("click", function () {
 
@@ -295,7 +295,7 @@ $(document).ready(function () {
 
     function init() {
 
-        // Retieve stored todos from localStorage
+        // Retieve stored cities from localStorage
         // Parse JSON string to an object
         var storedCities = JSON.parse(localStorage.getItem("cities"));
 

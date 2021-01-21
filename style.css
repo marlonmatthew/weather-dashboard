@@ -20,6 +20,7 @@ header {
     box-shadow: 2px 2px 2px rgb(0, 58, 134);
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
+    width: 375px;
 }
 
 #weatherCard1, #weatherCard2, #weatherCard3, #weatherCard4, #weatherCard5 {
@@ -39,6 +40,7 @@ header {
 #cityList, #searchForm {
     width: 200px;
 }
+
 .cityListItem {
     padding: 10px 50px;
     border-style: solid;
@@ -70,6 +72,20 @@ header {
     -webkit-border-radius: 5px;
 }
 
-ul {
-    list-style-type: none;
+@media (max-width: 575.98px) {
+
+   
+    
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+  
+    
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+   
+
 }
