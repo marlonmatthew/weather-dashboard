@@ -86,3 +86,11 @@ header {
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
 }
+
+@media (max-width: 575.98px) {
+
+#current {
+    width: 60%;
+}
+
+}
