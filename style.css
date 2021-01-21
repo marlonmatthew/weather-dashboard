@@ -1,3 +1,8 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 header {
     padding: 10px;
     background-color: gray;
@@ -25,7 +30,7 @@ header {
 
 #weatherCard1, #weatherCard2, #weatherCard3, #weatherCard4, #weatherCard5 {
     height: 200px;
-    width: 150px;
+    width: 180px;
     background-color: lightblue;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -72,20 +77,12 @@ header {
     -webkit-border-radius: 5px;
 }
 
-@media (max-width: 575.98px) {
-
-   
-    
-}
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-
-  
-    
-}
-
-@media (min-width: 768px) and (max-width: 991.98px) {
-
-   
-
+.color {
+    margin-left: 5px;
+    border:2px solid rgb(0, 0, 0);
+    -moz-box-shadow: 2px 2px 2px rgb(24, 24, 24);
+    -webkit-box-shadow: 2px 2px 2px rgb(24, 24, 24);
+    box-shadow: 2px 2px 2px rgb(24, 24, 24);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
 }
