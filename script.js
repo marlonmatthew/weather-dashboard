@@ -286,23 +286,6 @@ $(document).ready(function () {
 
     });
 
-    $(".cityListItem").on("click", function () {
-
-        var userCity = $(this).val();
-        console.log(userCity);
-        console.log(this);
-
-        // Clear all data
-        clearData();
-
-        // API call for Current Weather
-        apiCallCurrent(userCity);
-
-        // API call for 5 day forecast
-        apiCall5Day(userCity);
-
-    });
-
     $("#clearButton").on("click", function () {
 
         // Clear localStorage
@@ -328,6 +311,22 @@ $(document).ready(function () {
 
         };
 
+        $(".cityListItem").on("click", function () {
+
+            var userCity = $(this).val();
+            console.log(userCity);
+            console.log(this);
+
+            // Clear all data
+            clearData();
+
+            // API call for Current Weather
+            apiCallCurrent(userCity);
+
+            // API call for 5 day forecast
+            apiCall5Day(userCity);
+
+        });
     };
 
     function init() {
